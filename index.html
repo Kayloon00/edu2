@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <script>
+        function mudarTexto(botao) {
+            botao.innerHTML = "Sim";
+        }
+
+        function restaurarTexto(botao) {
+            botao.innerHTML = "Não";
+        }
+    </script>
+</head>
+<body>
+    <h1>Eduardo</h1>
+    <br>
+    <h2>você é GAY?</h2>
+    <br>
+    <button>Sim</button>
+
+   <button class="nao"
+        onmouseover="mudarTexto(this)" 
+        onmouseout="restaurarTexto(this)">
+        Não
+    </button>
+</body>
+</html>
